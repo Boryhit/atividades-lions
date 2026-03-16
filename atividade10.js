@@ -5,19 +5,16 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-let numero = '';
+let lista = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]; 
+let resultado = '';
 
 rl.question("Digite um número: ", (input) => {
-    numero = Number(input);
+    resultado = parseFloat(input);
 
-    for (i = 0; i > 100; i++){
-        const resultado = numero * i;
-        if (number == resultado){
+        if (lista.includes(resultado)){
             console.log("Seu número está na lista!")
         } else {
             console.log("Seu número não está na lista")
         }
-    }
-
-    rl.close();
+        rl.close();
 })
